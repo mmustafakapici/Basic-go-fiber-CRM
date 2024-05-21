@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "92cc01e7-49e0-47cb-b9e7-8614a8a54030",
+		"name": "Go-fiber-CRM-basic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19312868"
+	},
+	"item": [
+		{
+			"name": "ADD LEAD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"ID\":98,\n    \"name\":\"hakan muhafız\",\n    \"Company\" : \"Netflix\",\n    \"email\": \"muhafız@tapınakcılar.gov.tr\",\n    \"phone\":5451556658\n\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/lead/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"lead",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL LEADS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/lead/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"lead",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET A PARTICULAR LEAD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/lead/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"lead",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "98"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE A PARTICULAR LEAD",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/lead/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"lead",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "98"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
